@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="ico.png">
+  <title>CV</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      background:blanchedalmond ;
+               
+                
+      line-height: 1.5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+  
+    /* Header styles */
+    header {
+      background-color: #5736b3;
+      padding: 10px;
+      text-align: center;
+    }
+    .profile-image {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #0077cc;
+    }
+  
+    /* Main styles */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #0077cc;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 2
+    }
+    .my-button {
+    background-color: #4CAF50; /* Set background color */
+    border: none; /* Remove border */
+    color: white; /* Set font color */
+    padding: 10px 150px; /* Set padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as a block element */
+    font-size: 16px; /* Set font size */
+    margin-left: 500px; /* Set margin */
+    cursor: pointer; /* Change cursor on hover */
+    border-radius: 5px; /* Add rounded corners */
+}
+.center-italic {
+  text-align: center;
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+<div id="invoice">
+  <header>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+    <h1>Sheila Rudo Varaigwai</h1>
+    <nav>
+      <ul>
+        <li><a href="#Personal-Profile-Statement">Persolal Profile Statement</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Achievements/Experiences">Work Experience</a></li>
+        <li><a href="#Certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#Reference">Reference</a></li>
+        <li><a onclick="openDialog()" href="#More">More About Me</a></li>
+        <li><button id="download-button">Download as PDF</button></li>
+         
+      </ul>
+    </nav>
+  </header>
+  <div id="dialog" style="display:none;">
+    <button onclick="closeDialog()" class="my-button">Close</button>
+  </div>
+
+  <main>
+    <section id="#Personal-Profile-Statement">
+      <h2>Personal Profile Statement</h2>
+      <p> Iam a motivated, adaptable, friendly, outgoing and responsible person with 
+        a passion for learning and seeking the position of sub wardenship which will utilise 
+        somewhat professional and technical skills developed though past experience at HIT and 
+        in life. I have a methodical, peer-focused approach to work and a strong drive to see things
+        through to competition. Ihave the excellent ability to supervise,
+        manage and motivate other team members,</p>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Bachelor of Technology Honours degree in Information Security Assurance, Harare Institute of Technology, 2022-2026</li>
+        <li>Advanced Level Studies ,Serima High School, 2020-2022</li>
+        <li>Ordinary Level Studies ,Serima High School, 2016-2019</li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Professional confident with excellent diplomacy and 
+          negotiation persuasion skills.
+          Dealing with stressful situations in a calm and professional manner.
+        </li>
+        <li>Programming Languages: Java, JavaScript, HTML/CSS, C#</li>
+        <li>Database: MySQL</li>
+      </ul>
+    </section>
+    <section id="Achievements/experiences">
+      <h2>Achievements/ Experiences</h2>
+      <ul>
+        <li>Zimbabwe Centre For Futures Research Intern and share holder</li>
+        <li>SWODAS club co-founder and chairlady</li>
+      </ul>
+    </section>
+    <section id="Certificates">
+      <h2>Certificates</h2>
+      <ul>
+        <li> Certified Peer Educator by NAC</li>
+        <li>Certified Peer Counsellor by Connect and HIT </li>
+        <li>Certified futures developer by  HIT, 4CF Polish Node, Zimbabwe 
+          Centre for Futures Research
+        </li>
+      </ul>
+    </section>
+    <section id="personal-details">
+    <h2>Personal Details</h2>
+    <ul>
+      <li>Date of Birth: December 6 2002 </li>
+      <li>Place of birth: Chitungwiza general Hospital </li>
+      <li>Gender: Female</li>
+      <li>Nationality: Zimbabwean</li>
+      <li>Civil Status: Unmarried</li>
+      <li>National ID: 59-209703-X-12</li>
+    </ul>
+  </section>
+    <section id="contact">
+       
+      <h2>Contact</h2>
+      <ul>
+        <li>Phone: 0779983848</li>
+        <li>Email: sheilarudovaraigwai@gmail.com</li>
+        <li>GitHub: https://github.com/Miss-Rudo</li>
+      </ul>
+    </section>
+  </main>
+
+
+<script>
+function openDialog() {
+  document.getElementById("dialog").style.display = "block";
+}
+
+function closeDialog() {
+  document.getElementById("dialog").style.display = "none";
+}
+
+
+
+
+const button = document.getElementById('download-button');
+
+			function generatePDF() {
+				// Choose the element that your content will be rendered to.
+				const element = document.getElementById('invoice');
+				// Choose the element and save the PDF for your user.
+				html2pdf().from(element).save();
+			}
+
+			
+      
+button.addEventListener('click', generatePDF);
+
+</script>
+  
+</div>
+</body>
+</html>
